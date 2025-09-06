@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITCART|Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        
+        .formbox{
+            border: none;
+            width: 500px;
+            position: absolute;
+            top: 120px;
+            left: 530px;
+            padding: 7px;
+            box-shadow: 2px 2px 5px 5px rgba(195, 190, 190, 0.573);
+        }
+    
+    </style>
+</head>
+<body>
+                <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+             <a class="nav-link active" aria-current="page" href="./loginpage.html">Home</a>
+        </div>
+    </nav>
+
+    <!-- login layout -->
+   <div class="formbox">
+     <form>
+        <fieldset>
+            <Legend class="fw-bold text-center">Registration</Legend>
+                <div class="mb-3">
+                     <label for="exampleInputEmail1" class="form-label">Username:</label>
+                     <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp" placeholder="Enter Username" required>
+                </div>
+                <div class="mb-3">
+                     <label for="exampleInputEmail1" class="form-label">Email ID:</label>
+                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter a Valid Email Address" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password:</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                 <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confirm Password:</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+                <br>
+                <label for="">Already user?</label>
+                <a href="./loginpage.html" class="text-decoration-none">Login</a>
+        </fieldset>
+</form>
+   </div>
+   
+</body>
+</html>
