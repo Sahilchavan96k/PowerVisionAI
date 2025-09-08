@@ -6,59 +6,8 @@
   <title>PowerVision AI</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<style>
-        .bgvideo{
-            z-index: -10;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            padding: 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-        body{
-          background-image: linear-gradient(black , rgb(62, 80, 88));
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          color: white;
-        }
-        .header{
-          color: rgb(0, 173, 242);
-        }
-        .navbar-brand {
-          font-weight: bold;
-          font-size: 20px;
-          letter-spacing: 1px;
-          color: white !important;
-        }
-        .navbar {
-          box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-        }
-        
-        
-        .offcanvas-body .nav-link {
-          font-size: 18px;
-          margin: 5px 0;
-          transition: 0.3s;
-        }
-        .offcanvas-body .nav-link:hover {
-            color: #00796b;
-            transform: translateX(5px);
-        }
-        .offcanvas-footer {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            font-size: 14px;
-            color: #444;
-        }
-        .Text h1 {
-            text-shadow: 0 0 30px rgb(0, 255, 224);
-              
-        }
-
-</style>
+<link rel="stylesheet" href="./POWERVISION.CSS">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -73,6 +22,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
+
+  <!-- offcanvas  -->
   <div class="offcanvas offcanvas-end text-bg-light bg-light" tabindex="-1" id="offcanvaslightNavbar" aria-labelledby="offcanvaslightNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvaslightNavbarLabel"><span class="header">PowerVision AI</span></h5>
@@ -96,66 +47,90 @@
       </div>
     </div>
 </nav>
+
+<!-- Text -->
 <section class="Text text-center text-white d-flex align-items-center justify-content-center" style="height:100vh;">
   <div>
     <h1 class="display-3 fw-bold">PowerVision AI</h1>
     <p class="lead">AI Powered Smart Energy Solutions for Smarter Tomorrow</p>
-    <a href="#features" class="btn btn-info text-white btn-lg mt-3">Get Started</a>
+    <a href="#" class="btn btn-info text-white btn-lg mt-3">Get Started</a>
   </div>
 </section>
 
-<section id="features" class="container py-5 text-center bg-dark">
-  <h2 class="mb-4">Our Features</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card shadow-lg p-3">
-        <h5 class="card-title text-dark">⚡ Smart Energy Tracking</h5>
-        <p class="card-text text-dark">Monitor energy usage in real-time with AI insights.</p>
+<!-- Cards for Features -->
+<div class="row row-cols-1 bg-dark row-cols-md-3 g-4 mt-5 text-dark" id="Cards1">
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">💡 Energy Consumption:</h5>
+        <p class="card-text">Detailed Information about Energy Consumed & Bill Generated. Energy Billing System.</p>
+        <button type="button" class="btn btn-primary">Explore</button>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-lg p-3">
-        <h5 class="card-title text-dark">📊 Bill Prediction</h5>
-        <p class="card-text text-dark">Predict monthly bills using AI-based models.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-lg p-3">
-        <h5 class="card-title text-dark">🌍 Sustainable Future</h5>
-        <p class="card-text text-dark">Optimize power usage for a greener tomorrow.</p>
+      <div class="card-footer">
+        <small class="text-muted"></small>
       </div>
     </div>
   </div>
-</section>
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">🎤 Voice Controlls:</h5>
+        <p class="card-text">Accessing the Information within the Website by using Voice Commands.</p>
+        <button type="button" class="btn btn-primary">Explore</button>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"></small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">🤖 Bill Predictor:</h5>
+        <p class="card-text">ML Integration for Energy Bill Predictor for Prediction of Energy Bill by using Previous data.</p>
+        <button type="button" class="btn btn-primary">Explore</button>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"></small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About us -->
 <section id="about" class="py-5 bg-dark text-light">
   <div class="container">
     <h2>About Us</h2>
     <p>PowerVision AI is an innovative project developed by Electrical Engineering students that combines Artificial Intelligence with Smart Energy Monitoring. Our aim is to build intelligent solutions for efficient energy management and cost savings.</p>
   </div>
 </section>
+
+<!-- contact us -->
 <section id="contact" class="py-5 text-white" style="background: skyblue;">
   <div class="container">
     <h2>Contact Us</h2>
     <form>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Your Name">
+        <input type="text" class="form-control" placeholder="Your Name" required>
       </div>
       <div class="mb-3">
-        <input type="email" class="form-control" placeholder="Your Email">
+        <input type="email" class="form-control" placeholder="Your Email" required>
       </div>
       <div class="mb-3">
-        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+        <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Send Message</button>
     </form>
   </div>
 </section>
-<footer class="text-center text-white py-3" style="background:#222;">
+
+<!-- footer  -->
+<footer class="text-center text-white py-3" style="background:rgb(34, 34, 34);">
   <p>© 2025 PowerVision AI | All Rights Reserved</p>
   <div>
-    <a href="#" class="text-white me-3">LinkedIn</a>
-    <a href="#" class="text-white me-3">GitHub</a>
-    <a href="#" class="text-white">YouTube</a>
+    <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i>  LinkedIn </a>
+    <a href="#" class="text-white me-3"><i class="bi bi-github"></i> GitHub</a>
+    <a href="#" class="text-white"><i class="bi bi-twitter"></i> Twitter</a>
   </div>
 </footer>
 

@@ -1,198 +1,53 @@
-/* ===== Global Reset ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background: #000;
-  color: #fff;
-}
-
-/* ===== Hero Section ===== */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-.hero video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.55);
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  padding: 20px;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
-}
-
-.hero-content p {
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-  text-shadow: 0 0 10px #00f7ff;
-}
-
-.hero-content .btn {
-  display: inline-block;
-  padding: 12px 25px;
-  font-size: 1.1rem;
-  color: #fff;
-  background: linear-gradient(90deg, #00f7ff, #0077ff);
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
-  box-shadow: 0 0 10px #00f7ff, 0 0 20px #0077ff;
-}
-
-.hero-content .btn:hover {
-  background: linear-gradient(90deg, #0077ff, #00f7ff);
-  transform: scale(1.05);
-}
-
-/* ===== About Section ===== */
-#about {
-  padding: 60px 20px;
-  text-align: center;
-  background: #111;
-}
-
-#about h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-shadow: 0 0 10px #00f7ff;
-}
-
-#about p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  color: #ddd;
-}
-
-/* ===== Features Section ===== */
-#features {
-  padding: 60px 20px;
-  text-align: center;
-  background: #000;
-}
-
-#features h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  text-shadow: 0 0 10px #00f7ff;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.feature-box {
-  background: #111;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px #00f7ff44;
-  transition: 0.3s;
-}
-
-.feature-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px #00f7ff;
-}
-
-.feature-box h3 {
-  margin-bottom: 10px;
-  color: #00f7ff;
-}
-
-.feature-box p {
-  color: #ddd;
-}
-
-/* ===== Contact Section ===== */
-#contact {
-  padding: 60px 20px;
-  text-align: center;
-  background: #111;
-}
-
-#contact h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-shadow: 0 0 10px #00f7ff;
-}
-
-#contact form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-#contact input, #contact textarea {
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-#contact button {
-  padding: 12px;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(90deg, #00f7ff, #0077ff);
-  color: #fff;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#contact button:hover {
-  background: linear-gradient(90deg, #0077ff, #00f7ff);
-}
-
-/* ===== Footer ===== */
-footer {
-  padding: 20px;
-  text-align: center;
-  background: #000;
-  border-top: 1px solid #222;
-  color: #aaa;
-}
+        .bgvideo{
+            z-index: -10;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        body{
+          background-image: linear-gradient(black , rgb(62, 80, 88));
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          color: white;
+        }
+        .header{
+          color: rgb(0, 173, 242);
+        }
+        .navbar-brand {
+          font-weight: bold;
+          font-size: 20px;
+          letter-spacing: 1px;
+          color: white !important;
+        }
+        .navbar {
+          box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        
+        
+        .offcanvas-body .nav-link {
+          font-size: 18px;
+          margin: 5px 0;
+          transition: 0.3s;
+        }
+        .offcanvas-body .nav-link:hover {
+            color: #00796b;
+            transform: translateX(5px);
+        }
+        .offcanvas-footer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 14px;
+            color: #444;
+        }
+        .Text h1 {
+            text-shadow: 0 0 30px rgb(0, 255, 224);
+              
+        }
+        #cards1:hover{
+          transform: scale(2);
+        }
