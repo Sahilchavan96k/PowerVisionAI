@@ -48,6 +48,12 @@
             text-shadow: 0 0 30px rgb(0, 255, 224);
               
         }
-        #cards1:hover{
-          transform: scale(2);
+        #card1:hover{
+          transform: scale(1.07);
+        }
+        #card2:hover{
+          transform: scale(1.07);
+        }
+        #card3:hover{
+          transform: scale(1.07);
         }
