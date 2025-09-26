@@ -1,0 +1,151 @@
+/* ================== Global Styles ================== */
+body {
+    background-image: linear-gradient(black, rgb(62, 80, 88));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================== Video Background ================== */
+.bgvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+.content-box {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+}
+
+
+/* ================== Navbar ================== */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white !important;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+#Nav1 {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ================== Offcanvas ================== */
+.offcanvas-body .nav-link {
+    font-size: 18px;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.offcanvas-body .nav-link:hover {
+    color: rgb(0, 173, 242);
+    font-weight: bold;
+    transform: translateX(5px);
+}
+
+/* ================== Hero Text ================== */
+.Text h1 {
+    text-shadow: 0 0 30px rgb(0, 255, 224);
+}
+
+.Text p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ================== Feature Cards ================== */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+#card1:hover,
+#card2:hover,
+#card3:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* ================== Buttons ================== */
+.btn-primary {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    border: none;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #0056b3, #00a0cc);
+    transform: scale(1.05);
+}
+
+/* ================== About Us ================== */
+#about {
+    background: #f5f5f5;
+    color: #333;
+    border-top: 3px solid #00cfff;
+}
+
+/* ================== Contact Us ================== */
+#contact {
+    background: skyblue;
+    color: #222;
+    border-top: 3px solid #007bff;
+}
+
+#contact input,
+#contact textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0,123,255,0.4);
+}
+
+/* ================== Footer ================== */
+footer {
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-top: 3px solid #00d4ff;
+}
+
+footer a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #00cfff;
+    text-decoration: underline;
+}
